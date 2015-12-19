@@ -30,5 +30,6 @@ puts "Age: #{age}, height: #{height}, weight: #{weight}, IQ: #{iq}"
 puts "Here is a puzzle"
 
 what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
+#what =  age + (height - (weight *(iq / 2)))
 
-puts "That becomes #{what}. Can you do it by hand?"
+puts "That becomes #{what}. Can you do it by hand?" #done
