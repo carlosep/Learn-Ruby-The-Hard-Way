@@ -1,16 +1,26 @@
-i = 0
-numbers = []
+def print_numbers(num)
+	i = 0
+	numbers = []
 
-while i < 6
-	puts "At the top i is #{i}"
-	numbers.push(i)
+	(0..num).each do |i|
+		puts "At the top i is #{i}"
+		numbers.push(i)
 
-	i+= 1
-	puts "Numbers now: ", numbers
-	puts "At the bottom i is #{i}"
+		#i+= inc
+		puts "Numbers now: ", numbers
+		puts "At the bottom i is #{i}"
+	end
+
+	numbers.each{|num| puts num}
 end
+
 
 puts "The numbers: "
 
-#Remember you can write this 2 other ways?
-numbers.each{|num| puts num}
+print_numbers(3)
+
+print_numbers(4)
+
+print_numbers(10)
+
+
