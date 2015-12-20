@@ -4,8 +4,8 @@ def gold_room
 	print "> "
 	choice = $stdin.gets.chomp
 
-	#this line has a bug, so fix it
-	if choice.include?("0") || choice.include("1")
+	#this line has a bug, so fix it -- DONE!
+	if choice =~ /\A[-+]?[0-9]+\z/
 		how_much = choice.to_i
 	else
 		dead("Man, learn to type a number.")
