@@ -1,14 +1,14 @@
 class Other
 	def override()
-		puts "OTHER override"
+		puts "OTHER override()"
 	end
 
 	def implicit()
-		puts "OTHER implicit"
+		puts "OTHER implicit()"
 	end
 
 	def altered()
-		puts "OTHER altered"
+		puts "OTHER altered()"
 	end
 end
 
